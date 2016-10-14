@@ -1,0 +1,14 @@
+RxNorm
+-https://www.nlm.nih.gov/research/umls/rxnorm/#
+
+RxNorm API
+https://mor.nlm.nih.gov/download/rxnav/RxNormAPIs.html#
+
+RxNorm SOAP API
+https://mor.nlm.nih.gov/download/rxnav/RxNormAPISOAP.html
+
+Building Applications to Use the RxNorm (SOAP) API
+-https://mor.nlm.nih.gov/download/rxnav/RxNormAPIMakeApp.html#label:Java
+
+How to open the default webbrowser using java
+-http://stackoverflow.com/questions/5226212/how-to-open-the-default-webbrowser-using-java#
