@@ -1,0 +1,9 @@
+# ENSE374-AS3
+Assignment 3 repository
+
+SECTION BREAKDOWN:
+
+Rx database integration: Nathan
+Picture management: Konstantin
+Server software and internet communications: Josh
+User interface and snacks: Jeremy
