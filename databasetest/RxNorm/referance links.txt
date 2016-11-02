@@ -1,0 +1,9 @@
+rxnorm development info
+https://mor.nlm.nih.gov/download/rxnav/RxNormAPIMakeApp.html#label:Java
+
+axis development info
+https://developer.atlassian.com/display/CROWDDEV/Axis+1.x+Client+Stub+Generation
+
+axis help
+http://stackoverflow.com/questions/12613628/java2wsdl-axis-class-not-found
+
