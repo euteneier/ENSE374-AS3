@@ -8,6 +8,7 @@ public class UserMenu
 	{
 		int option = 0;
 		CreateAccount createNewAccount = new CreateAccount();
+		Login loginAccount = new Login();
 		Scanner in = new Scanner(System.in);
 		
 		do
@@ -34,9 +35,7 @@ public class UserMenu
 			
 			else if (option == 2)
 			{
-				// allows the user to login to one of the accounts in the list
-				// must be an account in the list
-				
+				loginAccount.loginToAccount();
 			}
 			
 			else if (option == 3)
