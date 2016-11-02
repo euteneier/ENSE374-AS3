@@ -19,7 +19,10 @@ public class CreateAccount
 		firstName = null;
 		lastName = null;
 		userName = null;
+		password = null;
 		newAccount = null;
+		accountToDelete = null;
+		listOfAccounts = null;
 	}
 	
 	public void addAccount()
@@ -28,11 +31,14 @@ public class CreateAccount
 		
 		System.out.println("enter either 1 to add a new account or 2 to delete an account");
 		choice = in.nextInt();
+		in.nextLine();
+		
 		
 		while (!(choice == 1 || choice == 2))
 		{
 			System.out.println("invalid option please try again");
 			choice = in.nextInt();
+			in.nextLine();
 		}
 		
 		if (choice == 1)
@@ -82,5 +88,7 @@ public class CreateAccount
 			
 			listOfAccounts.removeFromList(accountToDelete);
 		}
+		
+		in.close();
 	}
 }

@@ -46,5 +46,7 @@ public class Login
 		login = new AccountInfo(firstName, lastName, userName, password);
 		
 		listOfAccounts.login(login);
+		
+		in.close();
 	}
 }

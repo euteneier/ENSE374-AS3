@@ -17,7 +17,7 @@ public class AccountList
 			System.out.println("The account has been added to the list");
 
 		else
-			System.out.print("an error has occured");
+			System.out.println("an error has occured");
 	}
 	
 	public void removeFromList(AccountInfo accountToDelete)
