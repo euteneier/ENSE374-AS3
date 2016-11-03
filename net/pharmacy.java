@@ -20,4 +20,18 @@ public class pharmacy
 		port = p;
 	}
 
+	public String getName()
+	{
+		return name;
+	}
+	
+	public String getHost()
+	{
+		return host;
+	}
+	
+	public int getPort()
+	{
+		return port;
+	}
 }
