@@ -2,9 +2,8 @@ package photo;
 
 public class test
 {
-	public static void main(String[] args)
+	public static void main(String[] args) throws Exception
 	{
-		photo test = new photo();
-		test.loadPicture();
+		photo.save();
 	}
 }
