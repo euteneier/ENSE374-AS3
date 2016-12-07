@@ -12,6 +12,7 @@ public class UserMenu
 		CreateAccount createNewAccount = new CreateAccount();
 		Login loginAccount = new Login();
 		Scanner in = new Scanner(System.in);
+		String search = "";
 		
 		do
 		{
@@ -49,6 +50,11 @@ public class UserMenu
 			else if (option == 4)
 			{
 				// must have a prescription order created to view in database
+				System.out.println("please enter what you would like to search");
+				
+				search = in.next();
+				
+				database.search(search);
 			}
 			
 		}while(option != 5);
