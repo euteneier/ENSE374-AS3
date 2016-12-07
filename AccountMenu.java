@@ -11,6 +11,7 @@ public class AccountMenu
 	public static void main(String args[])
 	{
 		int option;
+		String search;
 		
 		Scanner in = new Scanner(System.in);
 		
