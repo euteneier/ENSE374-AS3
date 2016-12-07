@@ -7,15 +7,11 @@ import java.util.Scanner;
 
 public class AccountMenu 
 {
-	private int option;
 	
-	public AccountMenu()
+	public static void main(String args[])
 	{
-		option = 0;
-	}
-	
-	public void menu()
-	{
+		int option;
+		
 		Scanner in = new Scanner(System.in);
 		
 		do
@@ -38,6 +34,11 @@ public class AccountMenu
 			if (option == 1)
 			{
 				// insert function call for database functionality
+				System.out.println("please enter what you would like to search");
+				
+				search = in.next();
+				
+				database.search(search);
 			}
 			
 			else if (option == 2)
