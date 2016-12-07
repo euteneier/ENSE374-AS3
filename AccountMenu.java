@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class AccountMenu 
 {
 	
-	public static void main(String args[])
+	public static void main(String args[]) throws Exception
 	{
 		int option;
 		String search;
@@ -45,6 +45,7 @@ public class AccountMenu
 			else if (option == 2)
 			{
 				// insert function call photo functionality
+				photo.LoadPicture();
 			}
 			
 			else if (option == 3)
