@@ -1,31 +1,31 @@
-package account;
+package Assignment3;
 
 import java.util.Scanner;
 
-public class Login 
+public class DeleteAccount 
 {
 	private String firstName;
 	private String lastName;
 	private String userName;
 	private String password;
-	private AccountInfo login;
-	private AccountList listOfAccounts;
-
+	private Account accountToDelete;
+	private AccountList listOfAccounts = new AccountList();
 	
-	public Login()
+	public DeleteAccount()
 	{
 		firstName = null;
 		lastName = null;
 		userName = null;
 		password = null;
+		accountToDelete = null;
 		listOfAccounts = null;
 	}
 	
-	public void loginToAccount()
+	public Account AccountToDelete()
 	{
 		Scanner in = new Scanner(System.in);
 		
-		System.out.println("enter the information for the account you wish to login to");
+		System.out.println("please enter the info for the account you wish to delete");
 		
 		// the user enters there first name
 		System.out.println("the first name of your account");
@@ -43,10 +43,13 @@ public class Login
 		System.out.println("the password of your account");
 		password = in.nextLine();
 		
-		login = new AccountInfo(firstName, lastName, userName, password);
-		
-		listOfAccounts.login(login);
+		// sets the account delete info
+		accountToDelete = new Account(firstName, lastName, userName, password);
+
+		//listOfAccounts.removeFromList(accountToDelete);
 		
 		in.close();
+		
+		return accountToDelete;
 	}
 }

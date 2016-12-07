@@ -1,28 +1,38 @@
-package account;
+package Assignment3;
 
-public class AccountInfo 
+public class Account 
 {
 	private String firstName;
 	private String lastName;
 	private String userName;
 	private String password;
+	private AccountMenu menu = new AccountMenu();
 	
-	public AccountInfo()
+	public Account()
 	{
 		firstName = null;
 		lastName = null;
 		userName = null;
 		password = null;
+		menu = null;
 	}
 	
-	public AccountInfo(String firstName, String lastName, String userName, String password)
+	public Account(String firstName, String lastName, String userName, String password)
 	{
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.userName = userName;
 		this.password = password;
+		this.menu = null;
 	}
 	
+	public void toMenu()
+	{
+		// directs to account menu
+		menu.menu();
+	}
+	
+	/*
 	public void setFirstName(String firstName)
 	{
 		this.firstName = firstName;
@@ -42,6 +52,7 @@ public class AccountInfo
 	{
 		this.password = password;
 	}
+	*/
 	
 	public String getFirstName()
 	{
@@ -63,5 +74,3 @@ public class AccountInfo
 		return this.password;
 	}
 }
-
-
